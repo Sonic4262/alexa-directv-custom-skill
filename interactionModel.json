@@ -1,6 +1,6 @@
 {
     "languageModel": {
-        "invocationName": "direct tv",
+        "invocationName": "genie",
         "intents": [
             {
                 "name": "GetCommand",
