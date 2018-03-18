@@ -1,0 +1,610 @@
+{
+    "languageModel": {
+        "invocationName": "direct tv",
+        "intents": [
+            {
+                "name": "GetCommand",
+                "slots": [
+                    {
+                        "name": "command",
+                        "type": "COMMAND"
+                    },
+                    {
+                        "name": "zoneId",
+                        "type": "ZONE"
+                    }
+                ],
+                "samples": [
+                    "to {command} in the {zoneId}",
+                    "go to {command} in the {zoneId}",
+                    "what {command} am i watching in the {zoneId}",
+                    "{command} in the {zoneId}",
+                    "{command}",
+                    "go to {command}",
+                    "to {command}",
+                    "what {command} am i watching in the {zoneId}",
+                    "what {command} am i watching"
+                ]
+            },
+            {
+                "name": "GetChannelDirect",
+                "slots": [
+                    {
+                        "name": "ChannelNumber",
+                        "type": "AMAZON.NUMBER"
+                    },
+                    {
+                        "name": "zoneId",
+                        "type": "ZONE"
+                    }
+                ],
+                "samples": [
+                    "go to channel {ChannelNumber} in the {zoneId}",
+                    "change channel to {ChannelNumber} in the {zoneId}",
+                    "channel {ChannelNumber} in the {zoneId}",
+                    "go to channel {ChannelNumber}",
+                    "change channel to {ChannelNumber}",
+                    "channel {ChannelNumber}"
+                ]
+            }
+        ],
+        "types": [
+            {
+                "name": "COMMAND",
+                "values": [
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "play",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "resume",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "pause",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "freeze",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "guide",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "power",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "turn on",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "turn off",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "format",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "rewind",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "replay",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "stop",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "advance",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "fast forward",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "record",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "save",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "active",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "list",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "delete",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "recorded shows",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "DVR",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "exit",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "end",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "leave",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "back",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "menu",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "info",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "up",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "down",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "left",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "right",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "select",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "enter",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "channel up",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "page up",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "channel down",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "page down",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "previous",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "CNN",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "A&E",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "AMC",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "animal planet",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "b.e.t.",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "bravo",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "comedy central",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "C span",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "cartoon network",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "discovery",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "disney channel",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "disney junior",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "disney x.d.",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "food network",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "fox",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "FX",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "freeform",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "HGTV",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "hallmark",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "history channel",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "lifetime",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "MSNBC",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "MTV",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "MTV two",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "national geographic",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "nick junior",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "spike",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "syfy",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "TBS",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "TNT",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "TLC",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "true TV",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "VH one",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "ESPN",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "ESPN two",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "ABC family",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "show",
+                            "synonyms": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ZONE",
+                "values": [
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "living room",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "bed room",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "bathroom",
+                            "synonyms": []
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
